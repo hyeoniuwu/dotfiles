@@ -1,0 +1,42 @@
+# Useful links on customising grub themes:
+# http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial
+# https://www.gnu.org/software/grub/manual/grub/grub.html
+
+
+#title-text: "HALUA"
+#title-color: "#FFFFFF"
+terminal-font: "Perfect DOS VGA 437 Regular 16"
+message-font: "Perfect DOS VGA 437 Regular 16"
+#desktop-color: "#000000"
+desktop-image: "halua.ansi.png"
+
++ boot_menu
+{
+	left = 960-32
+	top = 512-48
+	width = 32
+	height = 64
+
+	item_padding = 0
+	item_spacing = 0
+	item_height = 16
+	item_color = "#686868"
+	item_font="Perfect DOS VGA 437 Regular 16"
+	selected_item_color = "#b2b2b2"
+	selected_item_font="Perfect DOS VGA 437 Regular 16"
+}
+
+
++ label
+{
+	left = 0
+	top = 0
+	height = 16
+	width = 56
+
+	id = "__timeout__"
+
+	font="Perfect DOS VGA 437 Regular 16"
+	color="#b2b2b2"
+}
+
